@@ -2,7 +2,7 @@ import React from 'react'
 
 function Navbar() {
   return (
-    <nav className="navbar navbar-expand-lg fixed-top bg-body-tertiary">
+    <nav className="navbar navbar-expand-lg fixed-top bg-body-tertiary shadow">
       <div className="container-fluid">
         <a className="navbar-brand" href="#">
           <img src="../public/assets/logo.png" alt="Wei Lun.co" className="object-fit-cover rounded-3" width="150" height="80" />
@@ -41,7 +41,7 @@ function Navbar() {
           </ul>
           <div className="row">
             <a className="col-auto" href="#"><i className="fs-5 bi bi-search"></i></a>
-            <a className="col-auto" href="#"><i className="fs-5 bi bi-heart-fill"></i></a>
+            <a className="col-auto" href="#"><i className="fs-5 bi bi-heart"></i></a>
             <a className="col-auto" href="#"><i className="fs-5 bi bi-cart"></i></a>
           </div>
         </div>
