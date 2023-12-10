@@ -6,19 +6,19 @@ function Card({ title, items }) {
       <h2 className="mb-3">{title}</h2>
       <div className="row">
         {items.map((item, index) => (
-          <div className="col-12 col-lg-4 mb-3" key={item + "-" + index}>
-            <div className="card h-100 overflow-hidden">
+          <div className="col-12 col-lg-4 mb-4" key={item + "-" + index}>
+            <div className="shadow rounded-3 h-100 overflow-hidden">
               <div className="row">
                 <div className="col-5 col-lg-12">
                   <a href="#">
                     <img alt={title + "-" + (index + 1)} className="w-100 object-fit-cover" height="300" loading="lazy" src={item.image} />
                   </a>
                 </div>
-                <div className="col-7 col-lg-12 pt-3 ps-2 ps-lg-4 card-body d-flex flex-column justify-content-between">
+                <div className="col-7 col-lg-12 px-lg-4 p-3 card-body d-flex flex-column justify-content-between">
                   <div>
                     <div className="d-flex align-items-center justify-content-between">
                       <a className="fs-5 fw-semibold link-dark link-underline-opacity-0 link-underline-opacity-50-hover" href="#">{item.name}</a>
-                      <button className="btn"><i className="bi bi-heart"></i></button>
+                      <button className="btn p-0 pe-2"><i className="bi bi-heart"></i></button>
                     </div>
                     <p className="text-secondary">{item.description}</p>
                     {item.discount > 0
