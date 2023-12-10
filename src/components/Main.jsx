@@ -1,6 +1,36 @@
 import React from 'react'
 import Carousel from './Carousel';
 import Card from './Card';
+import Section from './Section';
+
+const hotItem = (
+  <Card
+    title={"Don't Miss It!"}
+    items={[
+      {
+        image: "../public/assets/hot-item-1.jpg",
+        name: "Lorem ipsum",
+        description: "Harum laborum ipsa labore recusandae eveniet aspernatur obcaecati dolores!",
+        price: 160,
+        discount: 0
+      },
+      {
+        image: "../public/assets/hot-item-2.jpg",
+        name: "Lorem ipsum",
+        description: "Harum laborum ipsa labore recusandae eveniet aspernatur obcaecati dolores!",
+        price: 110,
+        discount: 0
+      },
+      {
+        image: "../public/assets/hot-item-3.jpg",
+        name: "Lorem ipsum",
+        description: "Harum laborum ipsa labore recusandae eveniet aspernatur obcaecati dolores!",
+        price: 180,
+        discount: 0
+      },
+    ]}
+  />
+);
 
 const newDrop = (
   <Carousel
@@ -8,22 +38,22 @@ const newDrop = (
     items={[
       {
         image: "../public/assets/new-drop-1.jpg",
-        name: "Lorem ipsum dolor sit amet",
+        name: "Lorem ipsum",
         description: "Harum laborum ipsa labore recusandae eveniet aspernatur obcaecati dolores!"
       },
       {
         image: "../public/assets/new-drop-2.jpg",
-        name: "Lorem ipsum dolor sit amet",
+        name: "Lorem ipsum",
         description: "Harum laborum ipsa labore recusandae eveniet aspernatur obcaecati dolores!"
       },
       {
         image: "../public/assets/new-drop-3.jpg",
-        name: "Lorem ipsum dolor sit amet",
+        name: "Lorem ipsum",
         description: "Harum laborum ipsa labore recusandae eveniet aspernatur obcaecati dolores!"
       },
       {
         image: "../public/assets/new-drop-4.jpg",
-        name: "Lorem ipsum dolor sit amet",
+        name: "Lorem ipsum",
         description: "Harum laborum ipsa labore recusandae eveniet aspernatur obcaecati dolores!"
       },
     ]}
@@ -57,26 +87,17 @@ const valueBuy = (
       },
     ]}
   />
-)
+);
 
 const components = [
+  hotItem,
   newDrop,
   valueBuy
 ];
 
-function Section({ components }) {
-  return (
-    components.map((component, index) => (
-      <section className="container mb-5" key={"component" + index}>
-        {component}
-      </section>
-    ))
-  );
-}
-
 function Main() {
   return (
-    <main className="p-3 py-5 p-lg-5">
+    <main className="px-3 py-5 px-lg-5">
       <Section components={components} />
     </main>
   );

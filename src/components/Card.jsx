@@ -4,10 +4,10 @@ function Card({ title, items }) {
   return (
     <>
       <h2 className="mb-3">{title}</h2>
-      <div className="row overflow-hidden">
+      <div className="row">
         {items.map((item, index) => (
           <div className="col-12 col-lg-4 mb-3" key={item + "-" + index}>
-            <div className="card h-100">
+            <div className="card h-100 overflow-hidden">
               <div className="row">
                 <div className="col-5 col-lg-12">
                   <a href="#">
@@ -16,8 +16,8 @@ function Card({ title, items }) {
                 </div>
                 <div className="col-7 col-lg-12 pt-3 ps-2 ps-lg-4 card-body d-flex flex-column justify-content-between">
                   <div>
-                    <div className="d-flex align-items-center">
-                      <a className="me-2 fs-5 fw-semibold link-dark link-underline-opacity-0 link-underline-opacity-50-hover" href="#">{item.name}</a>
+                    <div className="d-flex align-items-center justify-content-between">
+                      <a className="fs-5 fw-semibold link-dark link-underline-opacity-0 link-underline-opacity-50-hover" href="#">{item.name}</a>
                       <button className="btn"><i className="bi bi-heart"></i></button>
                     </div>
                     <p className="text-secondary">{item.description}</p>
