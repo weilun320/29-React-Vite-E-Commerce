@@ -1,20 +1,21 @@
 import React from 'react'
 
-function Carousel({ carouselInfo }) {
-  const { title, items } = carouselInfo;
+function Carousel({ title, items }) {
   const id = (title.indexOf(" ")) ? title.replaceAll(" ", "") : title;
 
   return (
-    <section className="container mb-5">
+    <>
       <h2 className="mb-3">{title}</h2>
       <div id={"carousel" + id} className="carousel carousel-dark slide" data-bs-ride="carousel">
         <div className="carousel-inner">
           {items.map((item, index) => (
             <div className={`carousel-item ${(index === 0) ? "active" : ""}`} key={title + "-" + index}>
-              <a href="#"><img src={item.src} height="500" loading="lazy" className="d-block w-100 object-fit-contain" alt={title + "-" + (index + 1)} /></a>
+              <a href="#">
+                <img src={item.image} height="500" loading="lazy" className="d-block w-100 object-fit-contain" alt={title + "-" + (index + 1)} />
+              </a>
               <div className="carousel-caption d-none d-md-block bg-light bg-opacity-75">
-                <h5 className="text-dark">{item.name}</h5>
-                <p className="text-dark">{item.description}</p>
+                <h5>{item.name}</h5>
+                <p>{item.description}</p>
               </div>
             </div>
           ))}
@@ -28,7 +29,7 @@ function Carousel({ carouselInfo }) {
           <span className="visually-hidden">Next</span>
         </button>
       </div>
-    </section>
+    </>
   );
 }
 
