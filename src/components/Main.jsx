@@ -1,6 +1,7 @@
 import React from 'react'
 import Carousel from './Carousel';
 import Card from './Card';
+import Banner from './Banner';
 import Section from './Section';
 
 const hotItem = (
@@ -89,10 +90,40 @@ const valueBuy = (
   />
 );
 
+const styleBanner1 = (
+  <Banner
+    alt={"Styling-1"}
+    image={"../public/assets/styling-1.jpg"}
+    title={"Want Something Special?"}
+    link={"Check Out Our Exclusive"}
+  />
+);
+
+const styleBanner2 = (
+  <Banner
+    alt={"Styling-2"}
+    image={"../public/assets/styling-2.jpg"}
+    title={"Not Sure How To Style?"}
+    link={"Click Here For More Styling"}
+  />
+);
+
+const styleBanner3 = (
+  <Banner
+    alt={"Styling-3"}
+    image={"../public/assets/styling-3.jpg"}
+    title={"Stay Connected"}
+    link={"Subscribe To Newsletter"}
+  />
+);
+
 const components = [
   hotItem,
+  styleBanner1,
   newDrop,
-  valueBuy
+  styleBanner2,
+  valueBuy,
+  styleBanner3
 ];
 
 function Main() {
