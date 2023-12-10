@@ -5,7 +5,7 @@ function Navbar() {
     <nav className="navbar navbar-expand-lg fixed-top bg-body-tertiary shadow">
       <div className="container-fluid">
         <a className="navbar-brand" href="#">
-          <img src="../public/assets/logo.png" alt="Wei Lun.co" className="object-fit-contain rounded-3" width="150" height="60" />
+          <img src="./assets/logo.png" alt="Wei Lun.co" className="object-fit-contain rounded-3" width="150" height="60" />
         </a>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#sidebar">
           <span className="navbar-toggler-icon"></span>
