@@ -11,7 +11,7 @@ function Header() {
             <p className="fs-5 text-light">Grab your gift now and get free wrapping!</p>
             <a className="btn btn-outline-light" href="#">Check out more!</a>
           </div>
-          <div className="w-100 mb-5 pb-4 position-absolute top-100 start-50 translate-middle text-center">
+          <div className="w-100 mb-5 pb-5 pb-sm-4 position-absolute top-100 start-50 translate-middle text-center">
             <div className="bg-dark bg-opacity-50 text-light">
               Valid for online and in-store purchse, while stocks last. T&Cs apply.
             </div>

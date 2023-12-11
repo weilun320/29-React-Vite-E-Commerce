@@ -14,13 +14,13 @@ function Card({ title, items }) {
                     <img alt={title + "-" + (index + 1)} className="w-100 object-fit-cover" height="300" loading="lazy" src={item.image} />
                   </a>
                 </div>
-                <div className="col-7 col-lg-12 px-lg-4 p-3 card-body d-flex flex-column justify-content-between">
+                <div className="col-7 col-lg-12 px-lg-4 p-2 p-sm-3 card-body d-flex flex-column justify-content-between">
                   <div>
                     <div className="d-flex align-items-center justify-content-between">
                       <a className="fs-5 fw-semibold link-dark link-underline-opacity-0 link-underline-opacity-50-hover" href="#">{item.name}</a>
                       <button className="btn p-0 pe-2"><i className="bi bi-heart"></i></button>
                     </div>
-                    <p className="text-secondary">{item.description}</p>
+                    <p className="text-secondary mb-1 mb-sm-3">{item.description}</p>
                     {item.discount > 0
                       ? (
                         <>
@@ -37,8 +37,8 @@ function Card({ title, items }) {
                     }
                   </div>
                   <div>
-                    <button className="btn btn-outline-secondary me-3">Add To Cart</button>
-                    <button className="btn btn-danger">Buy Now</button>
+                    <button className="btn btn-outline-secondary me-3 mb-1 mb-sm-0">Add To Cart</button>
+                    <button className="btn btn-danger mb-1 mb-sm-0">Buy Now</button>
                   </div>
                 </div>
               </div>
